@@ -1,49 +1,65 @@
-body{
-    height: 100vh;
-    display: flex;
-    flex-direction : column;
-    justify-content: center;
-    align-items: center;
-    animation-name: backgroundColorPalette;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+body {
+  font-family: "Press Start 2P", cursive;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation-name: backgroundColorPalette;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
-#container{
-    width: 350px;
-    height: 350px;
-    border: 2px solid black;
-    display: flex;
-    flex-direction : column;
-    align-items: center;
-}
-#draw{
-    margin-top: 10px;
-    padding: 13px 25px;
-    border: none;
-    background-color: burlywood;
-    border-radius: 10px;
-    box-shadow: 0px 9px 0px brown;
-    transition: all 100ms ease-in;
-}
-#draw:active{
-    box-shadow: none;
-    transform: translateY(5px);
+
+#draw:active {
+  box-shadow: none;
+  transform: translateY(5px);
 }
 @keyframes backgroundColorPalette {
-0% {
-  background: #ee6055;
+  0% {
+    background: #ee6055;
+  }
+  25% {
+    background: #60d394;
+  }
+  50% {
+    background: #aaf683;
+  }
+  75% {
+    background: #ffd97d;
+  }
+  100% {
+    background: #ff9b85;
+  }
 }
-25% {
-  background: #60d394;
+#container {
+  width: 350px;
+  height: 350px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-50% {
-  background: #aaf683;
+#draw {
+  margin-top: 10px;
+  padding: 13px 25px;
+  border: none;
+  background-color: burlywood;
+  border-radius: 10px;
+  box-shadow: 0px 9px 0px brown;
+  transition: all 100ms ease-in;
 }
-75% {
-  background: #ffd97d;
+#pokemon-container {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-100% {
-  background: #ff9b85;
-}
+
+.pokemon-img {
+  width: 150px;
+  height: 150px;
 }
